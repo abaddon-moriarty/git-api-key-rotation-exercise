@@ -1,0 +1,28 @@
+# Clés API et secrets
+*.key
+*.pem
+*.cert
+.env
+.env.local
+.env.*.local
+secrets/
+
+# Logs
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Application
+app.db
+*.db
