@@ -64,3 +64,13 @@ if __name__ == "__main__":
             "analysis": response,
             "model": self.model
         }
+
+    def analyze_sentiment(self, text):
+        """Analyse le sentiment d'un texte"""
+        prompt = f"Analyse le sentiment de ce texte (positif, négatif, neutre): {text}"
+        response = self.generate_response(prompt)
+        return {
+            "text": text,
+            "analysis": response,
+            "model": self.model
+        }
